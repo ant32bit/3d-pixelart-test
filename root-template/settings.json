@@ -1,0 +1,44 @@
+{
+    "model": "flowergirl",
+    "render": "final",
+    "size": 64,
+    "roughness": 0.1,
+    "normalsAA": 1,
+    "depthsAA": 1,
+    "mag": "linear",
+    "fps": 60,
+    "rpm": -7.5,
+    "lightX": 5,
+    "lightY": 3,
+    "lightZ": 1,
+    "modelParams": {
+        "flowergirl": {
+            "model": "flowergirl.obj",
+            "texture": "tex03.png",
+            "objectY": -2.5,
+            "cameraY": 3,
+            "cameraZ": 4
+        },
+        "inkling": {
+            "model": "inkling.obj",
+            "texture": "inkling.png",
+            "objectY": -7,
+            "cameraY": 7,
+            "cameraZ": 25
+        },
+        "ellia": {
+            "model": "ellia.obj",
+            "texture": "ellia-schoolgirl.jpg",
+            "objectY": -1.25,
+            "cameraY": 1,
+            "cameraZ": 3.5
+        },
+        "miku": {
+            "model": "miku2.obj",
+            "texture": "miku1.png",
+            "objectY": -1.5,
+            "cameraY": 1,
+            "cameraZ": 5
+        }
+    }
+}
