@@ -1,0 +1,23 @@
+{
+  "name": "3d-pixelart-test",
+  "version": "1.0.0",
+  "description": "3D generated pixel art test",
+  "main": "./dist/index.js",
+  "scripts": {
+    "clear": "rm -rf dist",
+    "build": "tsc && webpack && python3 integrate.py",
+    "host": "python3 -m http.server --directory dist/www-root 4600",
+    "start": "npm run clear && npm run build && npm run host",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anthony Paes",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^22.10.10",
+    "node": "^20.15.0",
+    "three": "^0.175.0",
+    "typescript": "^5.7.3",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  }
+}

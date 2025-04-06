@@ -1,7 +1,7 @@
 import { IRenderPass, RenderPass } from "./engine/render-pass";
 import { getFilename, readFile } from "./utils/file-reader";
 import { OBJLoader } from './utils/obj-loader';
-import { MeshBasicMaterial, ShaderMaterial, WebGLRenderTarget } from "./utils/three/src/Three";
+import * as THREE from 'three';
 
 window.addEventListener("load", async (ev) => {
 

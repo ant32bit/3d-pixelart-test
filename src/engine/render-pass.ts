@@ -1,4 +1,5 @@
 import { readFile } from "../utils/file-reader";
+import * as THREE from 'three';
 
 export interface IRenderPass {
     target: THREE.WebGLRenderTarget;

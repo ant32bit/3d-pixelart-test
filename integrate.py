@@ -4,7 +4,7 @@ import shutil
 from hashlib import md5
 
 def get_file_hash(filename):
-    with open(filename) as fh:
+    with open(filename, "rb") as fh:
         c = fh.read()
         return md5(c).hexdigest()
 

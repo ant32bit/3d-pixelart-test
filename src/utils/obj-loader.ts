@@ -36,14 +36,14 @@ var OBJLoader = ( function () {
 
 		var state = {
 			objects: [],
-			object: {},
+			object: {} as any,
 
 			vertices: [],
 			normals: [],
 			colors: [],
 			uvs: [],
 
-			materials: {},
+			materials: {} as any,
 			materialLibraries: [],
 
 			startObject: function ( name, fromDeclaration ) {
@@ -112,7 +112,8 @@ var OBJLoader = ( function () {
 									groupStart: 0,
 									groupEnd: - 1,
 									groupCount: - 1,
-									inherited: false
+									inherited: false,
+									clone: null
 								};
 								cloned.clone = this.clone.bind( cloned );
 								return cloned;
@@ -421,7 +422,7 @@ var OBJLoader = ( function () {
 
 			}
 
-		};
+		} as any;
 
 		state.startObject( '', false );
 
@@ -487,7 +488,7 @@ var OBJLoader = ( function () {
 
 		parse: function ( text ) {
 
-			var state = new ParserState();
+			var state = ParserState();
 
 			if ( text.indexOf( '\r\n' ) !== - 1 ) {
 
